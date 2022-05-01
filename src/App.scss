@@ -6,3 +6,13 @@ $color-lightbrown: #736463;
 $color-grey: #A69897;
 $color-dark: #0D0D0D;
 
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+
+    &-scroll-bg {
+        background-color: red;
+    }
+
+}

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAEK,AAAD,qBAAQ,EACP,wBAAU,CAAC;EACR,UAAU,EAAE,MAAM;CACrB;;AAEA,AAAD,qBAAQ,CAAC;EACL,WAAW,EAAE,oBAAoB;EACjC,SAAS,EAAE,IAAI;CAClB",
+    "sources": [
+        "referencement.scss"
+    ],
+    "names": [],
+    "file": "referencement.css"
+}

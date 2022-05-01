@@ -1,9 +1,10 @@
 import React from "react";
 import  Carousel  from "react-bootstrap/Carousel";
+import "../../Homepage/Diaporama/diaporama.css"
 
 const Diaporama = () => {
   return (
-    <Carousel>
+    <Carousel indicators={false}>
       <Carousel.Item>
         <img
           className="d-block w-100"
