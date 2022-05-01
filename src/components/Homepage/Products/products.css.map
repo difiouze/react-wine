@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,SAAS,CAAC;EACN,gBAAgB,ECDP,OAAO;CDMnB;;AAHE,AAAD,gBAAQ,CAAC;EACP,OAAO,EAAE,IAAI;CACd",
+    "sources": [
+        "products.scss",
+        "../../../App.scss"
+    ],
+    "names": [],
+    "file": "products.css"
+}
