@@ -5,7 +5,7 @@
   z-index: 9999;
 }
 
-.header-scroll-bg {
-  background-color: red;
+.header.sticky {
+  background-color: rgba(0, 0, 0, 0.6);
 }
 /*# sourceMappingURL=header.css.map */

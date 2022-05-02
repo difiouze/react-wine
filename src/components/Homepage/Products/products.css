@@ -1,3 +1,14 @@
+.header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+}
+
+.header-scroll-bg {
+  background-color: red;
+}
+
 .products {
   background-color: #A67E33;
 }
