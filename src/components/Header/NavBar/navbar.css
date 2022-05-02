@@ -1,0 +1,12 @@
+.navbar-light .navbar-nav .nav-link {
+  color: #fff;
+  font-weight: 600;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #fff;
+  opacity: .6;
+}
+/*# sourceMappingURL=navbar.css.map */

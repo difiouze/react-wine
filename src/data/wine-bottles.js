@@ -1,4 +1,4 @@
-const WineBottles = [
+const bottles = [
   {
     id: 1,
     name: "bottle 1",
@@ -37,4 +37,4 @@ const WineBottles = [
   },
 ];
 
-export default WineBottles;
+export default bottles;

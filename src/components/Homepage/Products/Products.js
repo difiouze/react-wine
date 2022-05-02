@@ -1,11 +1,10 @@
 import React from "react";
-import { useState } from "react";
-import WineBottles from "../../../data/wine-bottles";
+import bottles from "../../../data/wine-bottles";
 import Product from "../Product/Product";
 import "../Products/products.css";
 
 const Products = () => {
-  const [bottles] = useState(WineBottles);
+
 
   //console.log(bottles);
 

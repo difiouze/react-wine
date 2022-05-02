@@ -1,0 +1,11 @@
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+    font-weight: 600;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+        color: #fff;
+        opacity: .6;
+    }
+
+}

@@ -1,8 +1,8 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import NavBar from "./NavBar/NavBar";
-import Container from "react-bootstrap/Container";
-import "../Header/header.css"
+import Logo from "./Logo/Logo";
+import "./header.css"
 
 const Header = () => {
 
@@ -17,9 +17,10 @@ const Header = () => {
 
   return (
     <div className={`header ${scroll ? "sticky" : ""}`}>
-      <Container>
+      <div className="header__inner container">
+        <Logo />
         <NavBar />
-      </Container>
+      </div>
     </div>
   );
 };
