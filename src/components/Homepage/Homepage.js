@@ -8,7 +8,7 @@ const Homepage = () => {
     <>
     <Diaporama />
     <Referencement /> 
-    <Products />   
+    <Products />
     </>
   )
 }

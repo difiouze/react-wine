@@ -1,0 +1,26 @@
+.header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+}
+
+.header-scroll-bg {
+  background-color: red;
+}
+
+.copyright {
+  background: #0D0D0D;
+}
+
+.copyright__inner {
+  border-top: 1px solid #A67E33;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.copyright span {
+  color: #fff;
+}
+/*# sourceMappingURL=copyright.css.map */

@@ -7,7 +7,7 @@ const Reassurances = () => {
     <div className="reassurances">
       <div className="reassurances__inner container">
         {reassurances.map((reassurance) => (
-          <div className="reassurances__item" key={reassurances.id}>
+          <div className="reassurances__item" key={reassurance.id}>
             <div className="reassurances__image">
               <img src={reassurance.image} alt={reassurance.title} />
             </div>
