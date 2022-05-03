@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import Copyright from "./Copyright/Copyright";
+import Reassurances from "./Reassurances/Reassurances";
 
 const Footer = () => {
   return (
-    <div>Footer</div>
-  )
-}
+    <>
+      <Reassurances />
+      <Copyright />
+    </>
+  );
+};
 
-export default Footer
+export default Footer;

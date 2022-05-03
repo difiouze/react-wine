@@ -1,0 +1,42 @@
+@import '../../../App.scss';
+
+.reassurances {
+    background-color: $color-dark;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+    }
+
+    &__image {
+        margin-right: 10px;
+    }
+
+    &__blocktext {
+        display: flex;
+        flex-direction: column;
+        line-height: 18px;
+    }
+
+    &__title,
+    &__subtitle {
+        color: #fff;
+    }
+
+    &__title {
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    &__subtitle {
+
+    }
+
+}
