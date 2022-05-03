@@ -1,17 +1,12 @@
-import React from 'react';
-import Navbar from 'react-bootstrap/Navbar';
+import React from "react";
+import { Link } from "react-router-dom";
 
 const Logo = () => {
   return (
-    <Navbar.Brand href="/">
-      <img
-        src="img/logo.png"
-        width="40"
-        height="40"
-        alt="logo"
-      />
-    </Navbar.Brand>
-  )
-}
+    <Link to="/">
+      <img src="img/logo.png" width="40" height="40" alt="logo" />
+    </Link>
+  );
+};
 
-export default Logo
+export default Logo;

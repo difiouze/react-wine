@@ -10,7 +10,7 @@ const Header = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      setScroll(window.scrollY > 56);
+      setScroll(window.scrollY > 50);
     });
   }, []); 
 

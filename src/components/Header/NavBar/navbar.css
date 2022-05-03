@@ -1,11 +1,14 @@
-.navbar-light .navbar-nav .nav-link {
+.navbar-light .navbar-nav a {
   color: #fff;
   font-weight: 600;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
+  text-decoration: none;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-.navbar-light .navbar-nav .nav-link:hover {
+.navbar-light .navbar-nav a:hover {
   color: #fff;
   opacity: .6;
 }

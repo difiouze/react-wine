@@ -9,10 +9,6 @@
   background-color: red;
 }
 
-.products {
-  background-color: #A67E33;
-}
-
 .products__inner {
   display: -webkit-box;
   display: -ms-flexbox;
