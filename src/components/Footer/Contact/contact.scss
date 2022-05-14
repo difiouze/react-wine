@@ -1,0 +1,22 @@
+@import '../../../App.scss';
+
+.contact {
+    background-color: $color-dark;
+
+    &__inner {
+        display: flex;
+    }
+
+    &__newsletter {
+        display: flex;
+        align-items: center;
+    }
+
+    &__block-left,
+    &__block-right {
+        max-width: 50%;
+        width: 100%;
+        flex: 0 0 50%;
+    }
+
+}

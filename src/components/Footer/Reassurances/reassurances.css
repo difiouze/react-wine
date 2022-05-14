@@ -1,18 +1,5 @@
-.header {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  z-index: 9999;
-}
-
-.header-scroll-bg {
-  background-color: red;
-}
-
 .reassurances {
   background-color: #0D0D0D;
-  padding-top: 20px;
-  padding-bottom: 20px;
 }
 
 .reassurances__inner {
@@ -22,6 +9,10 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  border-top: 1px solid #A67E33;
+  border-bottom: 1px solid #A67E33;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .reassurances__item {

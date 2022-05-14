@@ -5,10 +5,6 @@
   z-index: 9999;
 }
 
-.header-scroll-bg {
-  background-color: red;
-}
-
 .products__inner {
   display: -webkit-box;
   display: -ms-flexbox;
