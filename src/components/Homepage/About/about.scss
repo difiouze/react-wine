@@ -1,0 +1,22 @@
+@import "../../../App.scss";
+
+.about {
+  background-color: $color-dark;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+  }
+  &__block-left,
+  &__block-right {
+    max-width: 50%;
+    width: 100%;
+    flex: 0 0 50%;
+  }
+
+  &__block-right-title,
+  p {
+    text-align: center;
+    color: #fff;
+  }
+}
