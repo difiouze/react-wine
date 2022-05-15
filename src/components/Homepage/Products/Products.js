@@ -12,12 +12,8 @@ const Products = () => {
     <div className="products">
       <div className="products__inner container">
       {bottles.map((bottle) => (
-          <Product 
-            name={bottle.name} 
-            description={bottle.description} 
-            key={bottle.id} 
-            price={bottle.price} 
-            image={bottle.image}/>
+          <Product bottle={bottle}
+            />
       ))}
       </div>
     </div>

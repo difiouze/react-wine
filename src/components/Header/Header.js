@@ -2,6 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import NavBar from "./NavBar/NavBar";
 import Logo from "./Logo/Logo";
+import Userpanel from "./Userpanel/Userpanel";
 import "./header.css"
 
 const Header = () => {
@@ -20,6 +21,7 @@ const Header = () => {
       <div className="header__inner container">
         <Logo />
         <NavBar />
+        <Userpanel />
       </div>
     </div>
   );

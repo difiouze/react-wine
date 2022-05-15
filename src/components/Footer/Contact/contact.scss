@@ -5,6 +5,16 @@
 
     &__inner {
         display: flex;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    &__heading {
+        color: #fff;
+        font-size: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: block;
     }
 
     &__newsletter {

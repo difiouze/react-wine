@@ -8,13 +8,12 @@ const Contact = () => {
     <div className="contact">
       <div className="contact__inner container">
         <div className="contact__block-left">
+        <span className="contact__heading">S'inscrire à notre newsletter</span>
           <div className="contact__newsletter">
-            <Form.Group>
               <Form.Control
                 id="TextInput"
                 placeholder="votre adresse mail..."
               />
-            </Form.Group>
             <Button type="submit">S'inscrire</Button>
           </div>
         </div>

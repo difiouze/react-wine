@@ -6,6 +6,16 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.contact__heading {
+  color: #fff;
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: block;
 }
 
 .contact__newsletter {
