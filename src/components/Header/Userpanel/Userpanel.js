@@ -1,10 +1,16 @@
-import React from 'react'
+import React, {useContext} from 'react';
+import CartContext from '../../../context/CartContext'
+import { Link } from "react-router-dom"
+
 
 const Userpanel = () => {
+
+  const { cart } = useContext(CartContext);
+
   return (
     <div>
-        <a href='/'>Login</a>
-        <a href='/'>Cart</a>
+        <Link to='/'>Login</Link>
+        <Link to='/checkout'>{cart.length}</Link>
     </div>
   )
 }

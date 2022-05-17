@@ -29,7 +29,7 @@ const ProductModal = ({name, image, description, price, show, onHide}) => {
         </div>
       </Modal.Body>
       <Modal.Footer>
-        <Button onClick={() => addToCart(name)}>Ajouter au panier</Button>
+        <Button onClick={() => addToCart(name, image, description, price)}>Ajouter au panier</Button>
         <Button onClick={onHide}>Fermer</Button>
       </Modal.Footer>
     </Modal>
