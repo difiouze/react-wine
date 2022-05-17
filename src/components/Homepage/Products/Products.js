@@ -1,18 +1,16 @@
-import React from "react";
-import bottles from "../../../data/wine-bottles";
+import React, { useContext } from "react";
 import Product from "../Product/Product";
 import "../Products/products.css";
+import CartContext from "../../../context/CartContext";
 
 const Products = () => {
-
-
-  //console.log(bottles);
+const { bottles } = useContext(CartContext);
 
   return (
     <div className="products">
       <div className="products__inner container">
-      {bottles.map((bottle) => (
-          <Product bottle={bottle}
+      {bottles.map((bottle, index) => (
+          <Product bottle={bottle} key={index}
             />
       ))}
       </div>
