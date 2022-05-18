@@ -3,6 +3,7 @@ import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
 import './productmodal.css';
 import CartContext from "../../../context/CartContext";
+import QuantityBox from "../../QuantityBox/QuantityBox";
 
 const ProductModal = ({name, image, description, price, show, onHide, id}) => {
 
@@ -28,6 +29,7 @@ const ProductModal = ({name, image, description, price, show, onHide, id}) => {
           <span>Price: {price}$</span>
         </div>
       </Modal.Body>
+      <QuantityBox />
       <Modal.Footer>
         <Button onClick={() => addToCart(name, image, description, price, id)}>Ajouter au panier</Button>
         <Button onClick={onHide}>Fermer</Button>
