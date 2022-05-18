@@ -21,6 +21,7 @@ const Product = ( {bottle} ) => {
         image={bottle.image}
         description={bottle.description}
         price={bottle.price}
+        id={bottle.id}
         show={modalShow}
         onHide={() => setModalShow(false)}
       />

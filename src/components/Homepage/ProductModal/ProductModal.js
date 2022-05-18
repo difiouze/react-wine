@@ -4,13 +4,13 @@ import Button from "react-bootstrap/Button";
 import './productmodal.css';
 import CartContext from "../../../context/CartContext";
 
-const ProductModal = ({name, image, description, price, show, onHide}) => {
+const ProductModal = ({name, image, description, price, show, onHide, id}) => {
 
   const { addToCart } = useContext(CartContext);
 
   return (
     <Modal
-      {...{name, image, description, price, show, onHide}}
+      {...{name, image, description, price, show, onHide, id}}
       size="lg"
       aria-labelledby="contained-modal-title-vcenter"
       centered
@@ -29,7 +29,7 @@ const ProductModal = ({name, image, description, price, show, onHide}) => {
         </div>
       </Modal.Body>
       <Modal.Footer>
-        <Button onClick={() => addToCart(name, image, description, price)}>Ajouter au panier</Button>
+        <Button onClick={() => addToCart(name, image, description, price, id)}>Ajouter au panier</Button>
         <Button onClick={onHide}>Fermer</Button>
       </Modal.Footer>
     </Modal>
