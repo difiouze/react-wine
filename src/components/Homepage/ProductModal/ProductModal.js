@@ -1,25 +1,29 @@
 import React, { useContext } from "react";
 import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
-import './productmodal.css';
+import "./productmodal.css";
 import CartContext from "../../../context/CartContext";
-import QuantityBox from "../../QuantityBox/QuantityBox";
 
-const ProductModal = ({name, image, description, price, show, onHide, id}) => {
-
-  const { addToCart } = useContext(CartContext);
+const ProductModal = ({
+  name,
+  image,
+  description,
+  price,
+  show,
+  onHide,
+  id,
+}) => {
+  const { addToCart, removeItem } = useContext(CartContext);
 
   return (
     <Modal
-      {...{name, image, description, price, show, onHide, id}}
+      {...{ name, image, description, price, show, onHide, id }}
       size="lg"
       aria-labelledby="contained-modal-title-vcenter"
       centered
     >
       <Modal.Header closeButton>
-        <Modal.Title id="contained-modal-title-vcenter">
-          {name}
-        </Modal.Title>
+        <Modal.Title id="contained-modal-title-vcenter">{name}</Modal.Title>
       </Modal.Header>
       <Modal.Body>
         <div className="card">
@@ -29,9 +33,24 @@ const ProductModal = ({name, image, description, price, show, onHide, id}) => {
           <span>Price: {price}$</span>
         </div>
       </Modal.Body>
-      <QuantityBox />
+      <>
+        <div className="quantity-box">
+          <div onClick={() => removeItem(id)} className="quantity-box-control quantity-box-decrement">
+            <span>-</span>
+          </div>
+          <input className="quantity-box-input" />
+          <div
+            onClick={() => addToCart(name, image, description, price, id)}
+            className="quantity-box-control quantity-box-increment"
+          >
+            <span>+</span>
+          </div>
+        </div>
+      </>
       <Modal.Footer>
-        <Button onClick={() => addToCart(name, image, description, price, id)}>Ajouter au panier</Button>
+        <Button onClick={() => addToCart(name, image, description, price, id)}>
+          Ajouter au panier
+        </Button>
         <Button onClick={onHide}>Fermer</Button>
       </Modal.Footer>
     </Modal>

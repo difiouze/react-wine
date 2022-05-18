@@ -20,12 +20,22 @@ export const CartProvider = ({ children }) => {
     }
   };
 
+  const removeItem = (id) => {
+    const exist = cart.find((x) => x.id === id);
+    if (exist.qty === 1) {
+      setCart(cart.filter(x => x.id !== id))
+    } else {
+      setCart(cart.map(x => x.id === id ? { ...exist, qty: exist.qty - 1 } : x))
+    }
+  }
+
+
   useEffect(() => {
     console.log(cart);
   }, [cart]);
 
   return (
-    <CartContext.Provider value={{ bottles, addToCart, cart }}>
+    <CartContext.Provider value={{ bottles, addToCart, cart, removeItem }}>
       {children}
     </CartContext.Provider>
   );
