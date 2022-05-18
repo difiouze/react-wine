@@ -13,7 +13,7 @@ const Product = ( {bottle} ) => {
       <span>Price: {bottle.price}$</span>
       <>
       <Button variant="primary" onClick={() => setModalShow(true)}>
-        En savoir plus
+        Voir le produit
       </Button>
 
       <ProductModal

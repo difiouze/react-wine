@@ -13,7 +13,7 @@ const ProductModal = ({
   onHide,
   id,
 }) => {
-  const { addToCart, removeItem } = useContext(CartContext);
+  const { addToCart } = useContext(CartContext);
 
   return (
     <Modal
@@ -33,20 +33,7 @@ const ProductModal = ({
           <span>Price: {price}$</span>
         </div>
       </Modal.Body>
-      <>
-        <div className="quantity-box">
-          <div onClick={() => removeItem(id)} className="quantity-box-control quantity-box-decrement">
-            <span>-</span>
-          </div>
-          <input className="quantity-box-input" />
-          <div
-            onClick={() => addToCart(name, image, description, price, id)}
-            className="quantity-box-control quantity-box-increment"
-          >
-            <span>+</span>
-          </div>
-        </div>
-      </>
+
       <Modal.Footer>
         <Button onClick={() => addToCart(name, image, description, price, id)}>
           Ajouter au panier
