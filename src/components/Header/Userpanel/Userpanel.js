@@ -1,6 +1,7 @@
 import React, {useContext, useEffect, useState} from 'react';
 import CartContext from '../../../context/CartContext'
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
+import './userpanel.css';
 
 
 const Userpanel = () => {
@@ -15,9 +16,9 @@ useEffect(() => {
 }, [cart])
 
   return (
-    <div>
-        <Link to='/'>Login</Link>
-        <Link to='/checkout'>{quantity}</Link>
+    <div className='userpanel'>
+        <Link to='/'><img src='/img/user.png' alt='user'/></Link>
+        <Link className='bag' to='/checkout'><img className="bag-icon" src="/img/bag.png" alt="bag"/><span className='bag-quantity'>{quantity}</span></Link>
     </div>
   )
 }

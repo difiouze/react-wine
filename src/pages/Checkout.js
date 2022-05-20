@@ -8,8 +8,8 @@ const Checkout = () => {
   return (
     <div className="checkout">
       <div className="checkout container">
-        {cart.map((item) => (
-          <>
+        {cart.length > 0 ? cart.map((item, index) => (
+          <div key={index}>
             <span>Nom article: {item.name} </span>
             <span>Price: {item.price * item.qty}</span>
             <>
@@ -17,7 +17,7 @@ const Checkout = () => {
           <div onClick={() => removeItem(item.id)} className="quantity-box-control quantity-box-decrement">
             <span>-</span>
           </div>
-          <input className="quantity-box-input" value={item.qty}></input>
+          <input className="quantity-box-input" placeholder={item.qty}></input>
           <div
             onClick={() => addToCart(item.name, item.image, item.description, item.price, item.id)}
             className="quantity-box-control quantity-box-increment"
@@ -26,8 +26,8 @@ const Checkout = () => {
           </div>
         </div>
       </>
-          </>
-        ))}
+          </div>
+        )) : <span>Aucun article ajouté</span>}
       </div>
     </div>
   );
