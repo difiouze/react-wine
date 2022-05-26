@@ -29,13 +29,17 @@ export const CartProvider = ({ children }) => {
     }
   }
 
+  const clearCart = () => {
+    setCart([]);
+  }
+
 
   useEffect(() => {
     console.log(cart);
   }, [cart]);
 
   return (
-    <CartContext.Provider value={{ bottles, addToCart, cart, removeItem }}>
+    <CartContext.Provider value={{ bottles, addToCart, cart, removeItem, clearCart }}>
       {children}
     </CartContext.Provider>
   );
