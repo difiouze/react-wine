@@ -3,7 +3,7 @@ import Button from 'react-bootstrap/Button'
 import ProductModal from "../ProductModal/ProductModal";
 import "./product.css";
 
-const Product = ( {bottle} ) => {
+const Product = ( {bottle, notify} ) => {
   const [modalShow, setModalShow] = React.useState(false);
 
   return (
@@ -25,6 +25,7 @@ const Product = ( {bottle} ) => {
         id={bottle.id}
         show={modalShow}
         onHide={() => setModalShow(false)}
+        notify={notify}
       />
     </>
     </div>

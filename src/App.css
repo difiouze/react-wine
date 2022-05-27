@@ -9,4 +9,12 @@
 a {
   text-decoration: none !important;
 }
+
+.Toastify__toast-theme--light .Toastify__toast-icon svg {
+  fill: #A67E33 !important;
+}
+
+.Toastify__progress-bar--info {
+  background: #A67E33 !important;
+}
 /*# sourceMappingURL=App.css.map */

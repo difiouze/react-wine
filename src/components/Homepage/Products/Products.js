@@ -3,14 +3,14 @@ import Product from "../Product/Product";
 import "../Products/products.css";
 import CartContext from "../../../context/CartContext";
 
-const Products = () => {
+const Products = ( {notify} ) => {
 const { bottles } = useContext(CartContext);
 
   return (
     <div className="products">
       <div className="products__inner container">
       {bottles.map((bottle, index) => (
-          <Product bottle={bottle} key={index}
+          <Product bottle={bottle} key={index} notify={notify}
             />
       ))}
       </div>

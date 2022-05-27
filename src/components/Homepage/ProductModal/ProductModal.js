@@ -13,8 +13,14 @@ const ProductModal = ({
   show,
   onHide,
   id,
+  notify
 }) => {
   const { addToCart } = useContext(CartContext);
+
+  const chainedFunction = () => {
+    addToCart(name, image, description, price, id); 
+    notify();
+  }
 
   return (
     <Modal
@@ -35,7 +41,7 @@ const ProductModal = ({
             <span className="product-modal__price">Prix: {price}€</span>
             <Button
               className="product-modal__btn"
-              onClick={() => addToCart(name, image, description, price, id)}
+              onClick={chainedFunction}
             >
               Ajouter au panier
             </Button>
@@ -44,10 +50,16 @@ const ProductModal = ({
       </Modal.Body>
 
       <Modal.Footer className="product-modal__footer">
-
-          <button onClick={onHide} className="btn btn-secondary product-modal__back">Continuer mes achats</button>
+        <button
+          onClick={onHide}
+          className="btn btn-secondary product-modal__back"
+        >
+          Continuer mes achats
+        </button>
         <Link to="/checkout">
-          <button className="btn btn-primary product-modal__checkout">Régler mes achats &gt;</button>
+          <button className="btn btn-primary product-modal__checkout">
+            Régler mes achats &gt;
+          </button>
         </Link>
       </Modal.Footer>
     </Modal>

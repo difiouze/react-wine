@@ -21,3 +21,13 @@ $color-dark: #0D0D0D;
   a {
     text-decoration: none!important;
   }
+
+  // Notify // 
+
+  .Toastify__toast-theme--light .Toastify__toast-icon svg{
+    fill: $color-gold!important;
+  }
+
+  .Toastify__progress-bar--info {
+    background: $color-gold!important;
+  }
