@@ -1,18 +1,19 @@
 import React from "react";
 import Button from 'react-bootstrap/Button'
 import ProductModal from "../ProductModal/ProductModal";
+import "./product.css";
 
 const Product = ( {bottle} ) => {
   const [modalShow, setModalShow] = React.useState(false);
 
   return (
-    <div className="card">
+    <div className="card bottle">
       <img src={bottle.image} alt={bottle.name} />
-      <h3>{bottle.name}</h3>
-      <span>{bottle.description}</span>
-      <span>Price: {bottle.price}$</span>
+      <span className="bottle__name">{bottle.name}</span>
+      <p className="bottle__description">{bottle.description}</p>
+      <span className="bottle__price">Prix: {bottle.price}€</span>
       <>
-      <Button variant="primary" onClick={() => setModalShow(true)}>
+      <Button className="bottle__button" variant="primary" onClick={() => setModalShow(true)}>
         Voir le produit
       </Button>
 

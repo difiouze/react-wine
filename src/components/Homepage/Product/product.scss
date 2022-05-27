@@ -1,0 +1,55 @@
+@import "../../../App.scss";
+
+.bottle {
+  &__name,
+  &__description,
+  &__price,
+  &__button {
+    text-align: center;
+    margin: 5px 0;
+  }
+
+  &__name {
+    font-weight: 500;
+    font-size: 18px;
+  }
+
+  &__description {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* number of lines to show */
+            line-clamp: 3; 
+    -webkit-box-orient: vertical;
+  }
+
+  &__price {
+      font-weight: 500;
+      font-size: 20px;
+  }
+
+  &__button {
+    background-color: $color-dark;
+    border: 1px solid $color-dark;
+
+    &:hover {
+      background-color: #fff;
+      color: $color-dark;
+      border: 1px solid $color-dark;
+    }
+
+  }
+
+}
+
+.bottle {
+
+&.card {
+  max-width: 24%;
+  width: 100%;
+  padding: 10px;
+}
+
+
+}
+

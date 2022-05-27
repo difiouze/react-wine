@@ -1,0 +1,50 @@
+.btn-check:focus + .btn-primary, .btn-primary:focus {
+  color: #fff;
+  background-color: #0D0D0D;
+  border-color: #0D0D0D;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.bottle__name, .bottle__description, .bottle__price, .bottle__button {
+  text-align: center;
+  margin: 5px 0;
+}
+
+.bottle__name {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.bottle__description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  /* number of lines to show */
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.bottle__price {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.bottle__button {
+  background-color: #0D0D0D;
+  border: 1px solid #0D0D0D;
+}
+
+.bottle__button:hover {
+  background-color: #fff;
+  color: #0D0D0D;
+  border: 1px solid #0D0D0D;
+}
+
+.bottle.card {
+  max-width: 24%;
+  width: 100%;
+  padding: 10px;
+}
+/*# sourceMappingURL=product.css.map */

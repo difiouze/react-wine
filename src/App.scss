@@ -6,3 +6,11 @@ $color-lightbrown: #736463;
 $color-grey: #A69897;
 $color-dark: #0D0D0D;
 
+// Buttons //
+
+.btn-check:focus + .btn-primary, .btn-primary:focus {
+    color: #fff;
+    background-color: $color-dark;
+    border-color: $color-dark;
+    box-shadow: none;
+  }

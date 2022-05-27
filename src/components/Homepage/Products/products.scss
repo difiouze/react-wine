@@ -2,9 +2,12 @@
 
 .products {
     //background-color: $color-gold; 
+    margin-top: 20px;
+    margin-bottom: 20px;
 
   &__inner {
     display: flex;
+    justify-content: space-between;
   }
 }
 

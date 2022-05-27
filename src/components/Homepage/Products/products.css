@@ -1,6 +1,22 @@
+.btn-check:focus + .btn-primary, .btn-primary:focus {
+  color: #fff;
+  background-color: #0D0D0D;
+  border-color: #0D0D0D;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.products {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 .products__inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 /*# sourceMappingURL=products.css.map */
