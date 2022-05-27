@@ -1,3 +1,23 @@
+.btn-check:focus + .btn-primary, .btn-primary:focus {
+  color: #fff;
+  background-color: #0D0D0D;
+  border-color: #0D0D0D;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.btn-check:focus + .btn-secondary, .btn-secondary:focus {
+  color: inherit;
+  background-color: none;
+  border-color: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+a {
+  text-decoration: none !important;
+}
+
 .copyright {
   background: #0D0D0D;
 }

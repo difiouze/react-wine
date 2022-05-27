@@ -6,6 +6,18 @@
           box-shadow: none;
 }
 
+.btn-check:focus + .btn-secondary, .btn-secondary:focus {
+  color: inherit;
+  background-color: none;
+  border-color: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+a {
+  text-decoration: none !important;
+}
+
 .bottle__name, .bottle__description, .bottle__price, .bottle__button {
   text-align: center;
   margin: 5px 0;

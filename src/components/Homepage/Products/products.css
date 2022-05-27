@@ -6,6 +6,18 @@
           box-shadow: none;
 }
 
+.btn-check:focus + .btn-secondary, .btn-secondary:focus {
+  color: inherit;
+  background-color: none;
+  border-color: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+a {
+  text-decoration: none !important;
+}
+
 .products {
   margin-top: 20px;
   margin-bottom: 20px;

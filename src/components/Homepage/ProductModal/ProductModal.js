@@ -44,9 +44,8 @@ const ProductModal = ({
       </Modal.Body>
 
       <Modal.Footer className="product-modal__footer">
-        <Link to="/">
-          <button className="btn btn-secondary product-modal__back">Continuer mes achats</button>
-        </Link>
+
+          <button onClick={onHide} className="btn btn-secondary product-modal__back">Continuer mes achats</button>
         <Link to="/checkout">
           <button className="btn btn-primary product-modal__checkout">Régler mes achats &gt;</button>
         </Link>
