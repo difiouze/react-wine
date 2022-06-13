@@ -6,16 +6,16 @@
           box-shadow: none;
 }
 
-.btn-check:focus + .btn-secondary, .btn-secondary:focus {
-  color: inherit;
-  background-color: none;
-  border-color: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
 a {
   text-decoration: none !important;
+}
+
+.Toastify__toast-theme--light .Toastify__toast-icon svg {
+  fill: #A67E33 !important;
+}
+
+.Toastify__progress-bar--info {
+  background: #A67E33 !important;
 }
 
 .copyright {

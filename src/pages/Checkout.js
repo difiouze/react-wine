@@ -13,50 +13,70 @@ const Checkout = () => {
 
   return (
     <div className="checkout">
-      <div className="checkout container">
-        {cart.length > 0 ? (
-          cart.map((item, index) => (
-            <div key={index}>
-              <span>Nom article: {item.name} </span>
-              <span>Price: {item.price * item.qty}</span>
-              <>
-                <div className="quantity-box">
-                  <div
-                    onClick={() => removeItem(item.id)}
-                    className="quantity-box-control quantity-box-decrement"
-                  >
-                    <span>-</span>
-                  </div>
-                  <input
-                    className="quantity-box-input"
-                    placeholder={item.qty}
-                  ></input>
-                  <div
-                    onClick={() =>
-                      addToCart(
-                        item.name,
-                        item.image,
-                        item.description,
-                        item.price,
-                        item.id
-                      )
-                    }
-                    className="quantity-box-control quantity-box-increment"
-                  >
-                    <span>+</span>
-                  </div>
+      <div className="checkout__inner container">
+        <div className="checkout__item-container">
+          {cart.length > 0 ? (
+            cart.map((item, index) => (
+              <div key={index} className="checkout__item">
+                <div className="checkout__img">
+                  <img src={item.image} alt={item.name} />
                 </div>
-              </>
-            </div>
-          ))
-        ) : (
-          <span>Aucun article ajouté</span>
-        )}
+                <div className="checkout__information">
+                  <span className="checkout__title">{item.name} </span>
+                  <span className="checkout__price">Prix: {item.price * item.qty}€</span>
+                  <>
+                    <div className="quantity-box">
+                      <div
+                        onClick={() => removeItem(item.id)}
+                        className="quantity-box-control quantity-box-decrement"
+                      >
+                        <span>-</span>
+                      </div>
+                      <input
+                        className="quantity-box-input"
+                        placeholder={item.qty}
+                      ></input>
+                      <div
+                        onClick={() =>
+                          addToCart(
+                            item.name,
+                            item.image,
+                            item.description,
+                            item.price,
+                            item.id
+                          )
+                        }
+                        className="quantity-box-control quantity-box-increment"
+                      >
+                        <span>+</span>
+                      </div>
+                    </div>
+                  </>
+                </div>
+
+
+              </div>
+            ))
+          ) : (
+            <span>Aucun article ajouté</span>
+          )}</div>
+
+        <>
+          {cart.length > 0 ? <div className="checkout__total">
+            <span>Prix total: {totalPrice}</span>
+            <button onClick={clearCart}>Vider le panier</button>
+            {totalPrice < 150 ?
+              <span>Plus que {150 - totalPrice} euros pour bénéficier de la livraison gratuite</span>
+              : <span>Vous bénéficiez de la livraison gratuite</span>}
+
+          </div>
+            : null
+          }
+        </>
       </div>
-      <div className="total-price container">
-        <span>Prix total: {totalPrice}</span>
-        <button onClick={clearCart}>Vider le panier</button>
-      </div>
+
+
+
     </div>
   );
 };
