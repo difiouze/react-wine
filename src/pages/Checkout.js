@@ -23,7 +23,6 @@ const Checkout = () => {
                 </div>
                 <div className="checkout__information">
                   <span className="checkout__title">{item.name} </span>
-                  <span className="checkout__price">Prix: {item.price * item.qty}€</span>
                   <>
                     <div className="quantity-box">
                       <div
@@ -52,6 +51,8 @@ const Checkout = () => {
                       </div>
                     </div>
                   </>
+                  <span className="checkout__price">{item.price * item.qty} €</span>
+
                 </div>
 
 
@@ -63,7 +64,8 @@ const Checkout = () => {
 
         <>
           {cart.length > 0 ? <div className="checkout__total">
-            <span>Prix total: {totalPrice}</span>
+            <span className="checkout__total-header">Prix total:</span>
+            <span className="checkout__total-price">{totalPrice} €</span>
             <button onClick={clearCart}>Vider le panier</button>
             {totalPrice < 150 ?
               <span>Plus que {150 - totalPrice} euros pour bénéficier de la livraison gratuite</span>
